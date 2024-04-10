@@ -1,0 +1,14 @@
+{
+    "version": "0.0.1",
+    "name": "links/profile",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Core\\": "src/",
+            "Templates\\": "template/"
+        }
+    },
+    "require": {
+        "php": "^8.1"
+    }
+}
