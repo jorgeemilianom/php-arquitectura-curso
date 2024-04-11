@@ -6,14 +6,17 @@ use Core\Controllers\FrontController;
 
 final class Kernel
 {
-    public function run(): string
+    public function run()
     {
+        session_start();
+        $_SESSION['error'] .= '';
+        $_SESSION['PageNotFound'] = true;
+        $_SESSION['user_token'] .= '';
+        
         if(!isset($_SESSION['User'])){
-            session_start();
             $_SESSION['User'] = false;
-            $_SESSION['error'] .= '';
         }
         
-        return FrontController::uriHook();
+        FrontController::uriHook();
     }
 }

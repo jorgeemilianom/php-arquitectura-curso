@@ -15,7 +15,7 @@ final class User
         $this->id = 1;
         $this->name = 'Pablo';
         $this->email = 'test@test.com';
-        $this->token = '123456789987654321abcdef';
+        $this->token = '123456';
         $this->Context = [];
     }
 

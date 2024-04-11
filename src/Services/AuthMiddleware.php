@@ -12,7 +12,7 @@ final class AuthMiddleware
 
     public function checkToken(): bool 
     {
-        return isset($_SESSION['user_token']) && $_SESSION['user_token'] != self::TOKEN;
+        return $_SESSION['user_token'] == self::TOKEN;
     }
 
     public function validateSession()
