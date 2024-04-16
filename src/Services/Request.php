@@ -5,6 +5,17 @@ namespace Core\Services;
 
 final class Request
 {
+    public $header;
+    public $uri;
+    public $body;
+    public $method;
+
+    public function __construct() {
+        $this->header = apache_request_headers();
+        $this->uri = $_SERVER['REQUEST_URI'];
+        $this->body = json_decode(file_get_contents("php://input"), true);
+        $this->method = $_SERVER['REQUEST_METHOD'];
+    }
     public static function Route(string $path, $callback): void
     {
         if($_SERVER['REDIRECT_URL'] == $path) {

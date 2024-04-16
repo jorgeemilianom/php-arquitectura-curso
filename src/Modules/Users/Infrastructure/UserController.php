@@ -3,8 +3,8 @@ declare(strict_types=1);
 
 namespace Core\Modules\Users\Infrastructure;
 use Core\Contracts\RequestControllerInterface;
+use Core\Controllers\LayoutController;
 use Core\Modules\Users\Application\ValidateUser;
-use Core\Services\AuthMiddleware;
 use Core\Services\Request;
 
 
@@ -17,14 +17,11 @@ final class UserController implements RequestControllerInterface
             Request::On('email', function (){
                 ValidateUser::index();
             });
-
-            return (string) include './template/Pages/Login/Login.php';
+            LayoutController::head();
+            LayoutController::nav();
+            include './template/Pages/Login/Login.php';
+            LayoutController::footer();
         });
 
-        Request::Route('/backoffice/', function () {
-            $Middleware = new AuthMiddleware();
-            $Middleware->validateSession();
-            return (string) include './template/Pages/Backoffice/Backoffice.php';
-        });
     }
 }

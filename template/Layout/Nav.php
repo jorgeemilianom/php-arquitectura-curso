@@ -1,3 +1,8 @@
+<?php
+
+
+
+?>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Links Platform</a>
@@ -10,7 +15,9 @@
           <a class="nav-link active" aria-current="page" href="/">Inicio</a>
         </li>
       </ul>
+      <?php if($btn_login): ?>
       <a class="btn btn-outline-success mx-1" aria-current="page" href="/login/">Login</a>
+      <?php endif; ?>
       <a class="btn btn-outline-success mx-1" aria-current="page" href="/backoffice/">Backoffice</a>
     </div>
   </div>

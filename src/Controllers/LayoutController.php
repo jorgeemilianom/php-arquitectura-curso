@@ -4,13 +4,19 @@ namespace Core\Controllers;
 
 abstract class LayoutController
 {
-    protected static function head()
+    public static function head()
     {
-        return '<link rel="stylesheet" type="text/css" href="css/layout.css">';
+        require_once './template/Sections/Head.php';
     }
 
-    public function footer()
+    public static function footer()
     {
-        echo '<script type="text/javascript" src="js/layout.js"></script>';
+        require_once './template/Sections/Footer.php';
     }
+
+    public static function nav()
+    {
+        require_once './template/Layout/Nav.php';
+    }
+
 }

@@ -3,6 +3,7 @@ require './src/Config/Defines.php';
 require './vendor/autoload.php';
 
 use Core\Config\Kernel;
+use Core\Services\Context;
 
 // Si alguien usa Mac y quiere ver los errores en pantalla usar:
 // ini_set('display_errors', 1);
@@ -10,7 +11,7 @@ use Core\Config\Kernel;
 // By: Patricio Gonzalez
 
 error_reporting(E_ALL & ~E_WARNING);
-
+$Context = new Context();
 $kernel = new Kernel();
 
 include './template/Sections/Head.php';

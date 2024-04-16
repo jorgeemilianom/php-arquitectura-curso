@@ -1,5 +1,3 @@
-<?php  include './template/Layout/Nav.php'; ?>
-
 <div>
 
 <?php if(!empty($_SESSION['error'])): ?>
@@ -9,7 +7,7 @@
 </div>
 
 <?php endif;
-        unset($_SESSION['error']) 
+    unset($_SESSION['error']) 
 ?>
 
 

@@ -9,17 +9,23 @@ use Core\Services\Request;
 
 final class ValidateUser
 {
-    public static function index(): void
+    public static function index()
     {
         $email = Request::Post('email');
         $password = Request::Post('password');
 
         $User = new User();
 
+        if(!preg_match("/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/", $email)) {
+            $_SESSION['error'] = "Formato del email, incorrecto";
+            return;
+        }
+
         if($email == $User->getEmail() && $password == $User->getToken()) {
             $_SESSION['User'] = true;
             $_SESSION['user_token'] = AuthMiddleware::TOKEN;
             Request::RouteHook('/backoffice/');
+            return;
         }
 
         $_SESSION['user_token'] = '';
