@@ -9,7 +9,11 @@ final class Init
 {
     public static function index()
     {
-        $Context = Context::getContext();
-        $Context->Data['TEST'] = "Esto es un mensaje";
+        try {
+            $Context = Context::getContext();
+            $Context->Data['TEST'] = "Esto es un mensaje";
+        } catch (\Throwable $th) {
+            //throw $th;
+        }
     }
 }

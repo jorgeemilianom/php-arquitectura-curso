@@ -1,0 +1,41 @@
+version: "3"
+
+services:
+  php:
+    build: ./docker/.
+    container_name: php_arquitectura_avanzada
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - arquitecturacurso
+  db:
+    image: mysql
+    container_name: mysql_arquitectura_avanzada
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    networks:
+      - arquitecturacurso
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: phpmyadmin_arquitectura_avanzada
+    ports:
+      - "3001:80"
+    depends_on:
+      - db
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=db
+      - PMA_USER=root
+      - PMA_PASSWORD=root
+      - PMA_PORT=3306
+    networks:
+      - arquitecturacurso
+
+networks:
+  arquitecturacurso:
+    name: arquitecturacurso
+    driver: bridge

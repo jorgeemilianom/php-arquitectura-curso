@@ -18,7 +18,7 @@ final class Request
     }
     public static function Route(string $path, $callback): void
     {
-        if($_SERVER['REDIRECT_URL'] == $path) {
+        if($_SERVER['REQUEST_URI'] == $path) {
             $_SESSION['PageNotFound'] = false;
             $callback();
         }
