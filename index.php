@@ -1,5 +1,10 @@
 <?php
 require './src/Config/Defines.php';
+
+if (!file_exists('./vendor/autoload.php')) {
+    echo '<h1>Ejecuta Composer install</h1>';die;
+}
+
 require './vendor/autoload.php';
 
 use Core\Config\Kernel;
