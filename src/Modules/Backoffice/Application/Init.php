@@ -2,15 +2,25 @@
 declare(strict_types=1);
 
 namespace Core\Modules\Backoffice\Application;
+use Core\Contracts\CoreAbstract;
+use Core\Contracts\CoreAbstracts\CoreAbstractApplication;
 use Core\Services\Context;
 use Core\Services\Request;
 use Core\Storage\MySQL;
 use Core\Modules\Backoffice\Infrastructure\BackofficeRepository;
 use Core\Storage\SQLite;
+use Exception;
+use InvalidArgumentException;
+use Throwable;
 
-final class Init extends BackofficeRepository
+final class Init extends CoreAbstractApplication
 {
-    public static function index()
+    private $repository;
+    public function __construct() {
+        $this->repository = new BackofficeRepository();
+    }
+    
+    public function index()
     {
         try {
             // $products = self::getAllProducts();

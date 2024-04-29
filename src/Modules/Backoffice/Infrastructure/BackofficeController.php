@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 namespace Core\Modules\Backoffice\Infrastructure;
+use Core\Contracts\CoreAbstract;
 use Core\Contracts\RequestControllerInterface;
 use Core\Controllers\LayoutController;
 use Core\Modules\Backoffice\Application\AddLink;
@@ -12,7 +13,7 @@ use Core\Services\Request;
 
 
 
-final class BackofficeController implements RequestControllerInterface
+final class BackofficeController extends CoreAbstract implements RequestControllerInterface 
 {
     public static function endpoints(): void
     {

@@ -3,10 +3,11 @@ declare(strict_types=1);
 
 namespace Core\Storage;
 
+use Core\Contracts\CoreAbstracts\CoreAbstract;
 use Exception;
 use SQLite3;
 
-class SQLite
+class SQLite extends CoreAbstract
 {
     public $db;
 

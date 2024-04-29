@@ -2,10 +2,11 @@
 declare(strict_types=1);
 
 namespace Core\Storage;
+use Core\Contracts\CoreAbstracts\CoreAbstract;
 use Exception;
 use mysqli;
 
-abstract class MySQL
+abstract class MySQL extends CoreAbstract
 {
     private static function Connection(): ?mysqli
     {
