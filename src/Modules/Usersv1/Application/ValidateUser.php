@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Core\Modules\Users\Application;
+namespace Core\Modules\Usersv1\Application;
 
-use Core\Modules\Users\Domain\User;
+use Core\Modules\Usersv1\Domain\User;
 use Core\Services\AuthMiddleware;
 use Core\Services\Request;
 

@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Core\Modules\Users\Infrastructure;
+namespace Core\Modules\Usersv1\Infrastructure;
 use Core\Contracts\RequestControllerInterface;
 use Core\Controllers\LayoutController;
-use Core\Modules\Users\Application\ValidateUser;
+use Core\Modules\Usersv1\Application\ValidateUser;
 use Core\Services\Request;
 
 
