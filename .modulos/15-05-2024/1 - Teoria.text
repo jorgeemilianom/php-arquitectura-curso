@@ -1,0 +1,4 @@
+
+El Modelo de Madurez de Richardson es un marco conceptual que describe la evolución de las APIs (Interfaces de Programación de Aplicaciones) a lo largo del tiempo. Este modelo fue propuesto por Leonard Richardson en su artículo "Maturity Model for REST APIs" en el año 2008.
+
+El modelo describe cuatro niveles de madurez, desde el nivel 0 hasta el nivel 3. Cada nivel representa un grado de sofisticación y cumplimiento de los principios REST (Transferencia de Estado Representacional).

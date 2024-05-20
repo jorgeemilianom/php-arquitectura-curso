@@ -1,0 +1,21 @@
+Tema del día:
+    - Modelo de Madurez de Richardson
+        * Ver ejemplos
+        * Comparar con nuestro proyecto symfony
+    
+Complementario:
+    - Hosting / Cloud / CloudCompartido / VPS
+        * Teoria
+        * Como son por dentro y como se administran
+    - Deploy 
+        * PHP
+        * Landing web
+        * React / Vue / Astro / AngularJs
+    - Deploy en vivo cliente:
+        * Obtener dominio NutriAlimentar.com.ar
+        * Configurar DNS
+        * Deployar repositorio en VPS
+        * Configurar NGINX
+    - Login React
+Consultas:
+    - Arquitectura/ presupuesto
