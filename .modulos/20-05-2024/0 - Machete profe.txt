@@ -33,6 +33,10 @@ Complementario::
                 - Etc
             - Hidratación de datos
     
+        - Mostrar un proyecto react en conjunto
+        - Mostrar mi proyecto como ejemplo de combinar react/php
+    npm install axios
+
                 
 
 
