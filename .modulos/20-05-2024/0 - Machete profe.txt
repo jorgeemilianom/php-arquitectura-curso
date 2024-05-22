@@ -1,0 +1,42 @@
+Tema del día:
+    - Análisis y Diseño Orientado a Objetos
+        - Problemas simples, soluciones simples
+        - Hacer MUCHO codigo
+        - Hacer respuestas, acumular respuestas, tener respuestas pre-elaboradas
+
+Complementario::
+    - Arquitectura / presupuesto
+        - No está mal comenzar con algo básico (un entorno en un hosting gratis?)
+    - Por donde seguir para avanzar en mis conocimientos de PHP?
+    - Conocimientos para complementar mis conocimientos en "Arquitectura"
+        - Front
+            - Vanilla (html, css, js)
+            - Framework
+        - Back
+            - Multiplicidad de Frameworks
+        - DB
+            - SQL (Mysql, PostgreSQL, SQLite)
+            - NO-SQL (Redis, MongoDB)
+        - DevOps
+            - Cloud basico
+            - Manejo de Docker y contenedores
+            - CI/CD
+        - Performance
+        - Integraciones
+            - AWS (EC2, S3, CloudSearch, Cognito, etc)
+            - ElasticSearch
+            - Firebase (Storage, Auth, Analitycs)
+            - Motores de pago
+                - Prisma / Decidir / Payway 
+                - MercadoPago
+                - Paypal
+                - Etc
+            - Hidratación de datos
+    
+        - Mostrar un proyecto react en conjunto
+        - Mostrar mi proyecto como ejemplo de combinar react/php
+    npm install axios
+
+                
+
+
