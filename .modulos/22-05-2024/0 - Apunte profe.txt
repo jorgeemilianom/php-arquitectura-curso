@@ -17,3 +17,7 @@ Temas:
     - Arquitectura y gestion de proyectos
     - Previsibilidad en desarrollo
     - Frameworks como modelo de negocio
+    - Consejos menores:
+        - Rendir pruebas tecnicas
+        - Vender su perfil
+        - Trabajar en blanco, no significa no trabajar como autonomo
