@@ -1,0 +1,7 @@
+En esta instancia del curso, ya dimos todos los temas. Quedan resolver dudas y consultar. 
+Adisionalmente daré unos temas complementarios en virtud del interes de los alumnos.
+
+Temas:
+    - Legalidad y codigo.
+    - Cachear datos en Redis
+    - Core-framework
