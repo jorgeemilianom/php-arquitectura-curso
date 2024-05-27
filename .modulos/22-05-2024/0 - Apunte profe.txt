@@ -1,0 +1,23 @@
+En esta instancia del curso, ya dimos todos los temas. Quedan resolver dudas y consultar. 
+Adisionalmente daré unos temas complementarios en virtud del interes de los alumnos.
+
+Temas:
+    - repaso
+    - No es necesario saber todo a pie de letra, sino saber los conceptos
+        (guardar conceptos en repositorios)
+    - SQL
+    - Legalidad y codigo.
+    - Cachear datos en Redis
+    - Core-framework
+        - Modelos de negocio
+        - Adaptabilidad de CORE
+    - Modificacion con Docker 
+        - Redis
+        - PostgreSQL
+    - Arquitectura y gestion de proyectos
+    - Previsibilidad en desarrollo
+    - Frameworks como modelo de negocio
+    - Consejos menores:
+        - Rendir pruebas tecnicas
+        - Vender su perfil
+        - Trabajar en blanco, no significa no trabajar como autonomo
