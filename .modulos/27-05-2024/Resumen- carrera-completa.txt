@@ -1,0 +1,70 @@
+Carrera del arquitecto
+    - Frontend
+        - HTML, CSS, and JavaScript
+        - Frameworks
+            - React
+            - AstroJS
+            - Vue
+            - Angular
+        - Patrones y arquitectura
+        - Arquitecturas CSS
+    - Backend
+        - PHP
+            - Symfony
+            - Laravel
+            - Yi
+            - PrestaShop
+        - NodeJS
+            - Express
+            - Nest
+            - Adonis
+        - JAVA o C#
+        - Python
+            - Django
+            - FastApi
+    - DB
+        - SQL
+            - MySQL
+            - PostgreSQL
+            - SQLite
+            - SQL Server
+            - DynamoDB
+        - NOSQL
+            - MongoDB
+            - Redis
+            - Elasticsearch
+    - Arq
+        - WebSocket
+        - REST FULL
+        - GrapQL
+        - SOAP
+    - Mobile
+        - Multi-plataforma
+            - React Native
+            - Flutter
+            - Cordoba
+        - Nativo
+            - JAVA
+            - kotline
+            - Swift
+            - Objetive-C
+            - C#
+            - C++
+    - Patrones de diseño
+    - Modelos de arquitectura
+    - Integradores
+        - AWS (S3, ACS, AEM)
+        - Google Cloud, Analytics, Adsense
+        - Facebook, Pixel
+        - Procesadores de Pago
+            - MercadoPagho
+            - MODO
+            - Decidir/Payway
+            - Prisma
+            - Paypal
+            - Neteller
+    - Politica de comercio
+        - Legalidad
+        - Modelo de negocio
+    - Web3
+    - IA
